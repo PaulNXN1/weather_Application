@@ -1,21 +1,50 @@
 body {
-
+   
     background-color: whitesmoke;
+ 
 }
 
 #header {
+    border: 0%;
+    margin: 1%;
+    height: 30px;
+
+}
+
+#input, #newButton {
+    
+    border: 7%;
+    margin: 1%;
+    width: 12%;
+    height: 37px;
+    
+}
+
+
+.section {
+    border-radius: 3%;
     padding: 1%;
 }
 
-#input {
-    padding: 0.3%;
-    border-radius: 7%;
+#forecast, #display {
+    margin:30px;
 }
 
-#button {
-    background-color: lightgrey;
-    border: 10%;
-    margin: 0%;
-    width: 10%;
+#currentWeather {
+    border: solid darkgray;
+    width: 50%;
+    
+}
 
+#box1,#box2,#box3,#box4,#box5 {
+    border: inset;
+    width: 50%;
+}
+
+#display {
+    display:flex;
+    justify-content: center;
+    justify-content: space-between;
+    border:solid;
+    font: center;
 }

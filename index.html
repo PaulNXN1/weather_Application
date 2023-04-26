@@ -7,45 +7,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Application</title>
   <link rel="stylesheet" href="style.css">
+  <!--Tailwind CSS-->
   <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
-  
+
 
   <div class="text-5xl font-extrabold ...">
     <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-      Weather Dashboard 🔆 ⚡ ☔
+      Weather Dashboard 🔆 ⚡ ☔<br>
+      Current Date & Time:
     </span>
   </div>
 
-  <h2 id="header">Search for a City:</h2>
+  <h2 id="header">Search for a City Below:</h2>
   <form>
-  
-    <input id = "input" type="text" placeholder="Enter City Here"><br>
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    <input id="input" type="text" placeholder="Enter City Here"><br>
+    <button id="newButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
       Search
     </button>
-
   </form>
 
+  <section id="currentWeather">
 
-  <br><br><br><br>
-
-  <section>
-    <div class="grid grid-cols-3 gap-4 place-items-stretch h-56">
-      <div>01</div>
-      <div>02</div>
-      <div>03</div>
-      <div>04</div>
-      <div>05</div>
-      <div>06</div>
+    <div>
+      <p>City:</p>
+      <br>
+      <p>Temp:</p>
+      <p>Wind:</p>
+      <p>Humidity:</p>
     </div>
+
   </section>
 
 
+  <br>
 
+  <p id="forecast">Five Day Forecast</h1>
+    <br><br><br><br>
+
+  <section id="display">
+      <div id="box1">01</div>
+      <div id="box2">02</div>
+      <div id="box3">03</div>
+      <div id="box4">04</div>
+      <div id="box5">05</div>
+    
+  </section>
+
+
+  <!--Day.js link/reference-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"
+    integrity="sha512-hcV6DX35BKgiTiWYrJgPbu3FxS6CsCjKgmrsPRpUPkXWbvPiKxvSVSdhWX0yXcPctOI2FJ4WP6N1zH+17B/sAA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
+
 
 </html>
