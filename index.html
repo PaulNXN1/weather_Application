@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Application</title>
   <link rel="stylesheet" href="style.css">
-  
+
   <!--Tailwind CSS-->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -15,34 +15,35 @@
 
 <body>
 
-<header>
-  <div class="text-5xl font-extrabold">
-    <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-500">
-      Weather Dashboard 🔆 ⚡ ☔<br>
-      Current Date & Time: <p id="timeDate"></p>
+  <header>
+    <div class="text-5xl font-extrabold">
+      <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violent-500">
+        Weather Dashboard 🔆 ⚡ ☔<br>
+        Current Date:<p id="timeDate"></p>
       </span>
-  </div>
-</header>
-  <br>  <br>   <br>   <br>
+    </div>
+  </header>
+  <br> <br> <br> <br>
 
 
 
   <section id="topSection">
     <h2>Search for a City Below:
-    <br>
+      <br>
 
-    <form>
-      <input id="input" type="text" placeholder="Enter City Here"><br>
-      <button id="newButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Search
-      </button>
-    </form></h2>
+      <form>
+        <input id="input" type="text" placeholder="Enter City Here"><br>
+        <button id="newButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Search
+        </button>
+      </form>
+    </h2>
 
     <!--Current Weather Box-->
     <section id="currentWeather">
 
       <div>
-        <p>Weather for Today:</p>
+        <p>Current Weather for Today:</p>
         <br>
         <p id="currentTemp">Temp:</p>
         <p id="currentWind">Wind:</p>
@@ -62,18 +63,18 @@
 
   <section id="display"></section>
 
+  <!--dayJS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
 
   <!--JavaScript Link-->
   <script src="./main.js"></script>
 
-  <!--Day.js link/reference-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"
-    integrity="sha512-hcV6DX35BKgiTiWYrJgPbu3FxS6CsCjKgmrsPRpUPkXWbvPiKxvSVSdhWX0yXcPctOI2FJ4WP6N1zH+17B/sAA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 
 </body>
+
+
 
 
 </html>

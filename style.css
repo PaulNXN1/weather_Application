@@ -1,6 +1,7 @@
-body {
+p, body {
    
     background-color: rgb(239, 235, 235);
+    
  
 }
 
@@ -46,4 +47,9 @@ body {
 #topSection {
     display: flex;
     justify-content: space-around;
+}
+
+
+#timeDate {
+    color: black;
 }
