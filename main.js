@@ -1,5 +1,8 @@
 var newButton = document.getElementById('newButton');
 var inputField = document.getElementById('input');
+var correctTime = document.getElementById('timeDate');
+
+
 
 
 
@@ -14,7 +17,7 @@ function getAPI() {
         // Current weather log
 
         .then(function (data) {
-            console.log(data);
+            
             let currentTemp = document.getElementById("currentTemp");
             currentTemp.textContent = "Temp: " + data.main.temp + " F";
 
@@ -24,6 +27,8 @@ function getAPI() {
             let currentHumidity = document.getElementById("currentHumidity");
             currentHumidity.textContent = "Humidity: " + data.main.humidity + "%";
 
+
+// Code for the 5-Day Forecast
 
             var fiveDayUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + data.coord.lat + '&lon=' + data.coord.lon + '&appid=938fb3720289098948304613a4e3a426&units=imperial';
             fetch(fiveDayUrl)

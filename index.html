@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Application</title>
   <link rel="stylesheet" href="style.css">
+  
   <!--Tailwind CSS-->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -14,13 +15,14 @@
 
 <body>
 
-
+<header>
   <div class="text-5xl font-extrabold">
     <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-500">
       Weather Dashboard 🔆 ⚡ ☔<br>
-      Current Date & Time:
-    </span>
+      Current Date & Time: <p id="timeDate"></p>
+      </span>
   </div>
+</header>
   <br>  <br>   <br>   <br>
 
 
@@ -40,7 +42,7 @@
     <section id="currentWeather">
 
       <div>
-        <p>Searched City:</p>
+        <p>Weather for Today:</p>
         <br>
         <p id="currentTemp">Temp:</p>
         <p id="currentWind">Wind:</p>
@@ -53,57 +55,23 @@
 
   <br>
 
+  <!--5 day forecast section / container -->
+
   <p id="forecast"> 5-Day Forecast</h1>
     <br><br>
 
-  <section id="display">
+  <section id="display"></section>
 
-  <!--<div id="box1">
-      <p>Date:</p>
-      <p>Temp:</p>
-      <p>Wind:</p>
-      <p>Humidity:</p>
-    </div>
 
-    <div id="box2">
-      <p>Date:</p>
-      <p>Temp:</p>
-      <p>Wind:</p>
-      <p>Humidity:</p>
-    </div>
-
-    <div id="box3">
-      <p>Date:</p>
-      <p>Temp:</p>
-      <p>Wind:</p>
-      <p>Humidity:</p>
-    </div>
-
-    <div id="box4">
-      <p>Date:</p>
-      <p>Temp:</p>
-      <p>Wind:</p>
-      <p>Humidity:</p>
-    </div>
-
-    <div id="box5">
-      <p>Date:</p>
-      <p>Temp:</p>
-      <p>Wind:</p>
-      <p>Humidity:</p>
-    </div>
-  -->
-    
-
-  </section>
-
+  <!--JavaScript Link-->
+  <script src="./main.js"></script>
 
   <!--Day.js link/reference-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"
     integrity="sha512-hcV6DX35BKgiTiWYrJgPbu3FxS6CsCjKgmrsPRpUPkXWbvPiKxvSVSdhWX0yXcPctOI2FJ4WP6N1zH+17B/sAA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="./main.js"></script>
+
 
 </body>
 
