@@ -37,6 +37,7 @@ body {
 #box1,#box2,#box3,#box4,#box5 {
     border: inset;
     width: 50%;
+    background-color: lightblue;
 }
 
 #display {

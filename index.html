@@ -15,8 +15,8 @@
 <body>
 
 
-  <div class="text-5xl font-extrabold ...">
-    <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+  <div class="text-5xl font-extrabold">
+    <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-500">
       Weather Dashboard 🔆 ⚡ ☔<br>
       Current Date & Time:
     </span>
@@ -36,14 +36,15 @@
       </button>
     </form></h2>
 
+    <!--Current Weather Box-->
     <section id="currentWeather">
 
       <div>
-        <p>City:</p>
+        <p>Searched City:</p>
         <br>
-        <p>Temp:</p>
-        <p>Wind:</p>
-        <p>Humidity:</p>
+        <p id="currentTemp">Temp:</p>
+        <p id="currentWind">Wind:</p>
+        <p id="currentHumidity">Humidity:</p>
       </div>
 
     </section>
@@ -52,12 +53,12 @@
 
   <br>
 
-  <p id="forecast">Five Day Forecast</h1>
-    <br><br><br><br>
+  <p id="forecast"> 5-Day Forecast</h1>
+    <br><br>
 
   <section id="display">
 
-    <div id="box1">
+  <!--<div id="box1">
       <p>Date:</p>
       <p>Temp:</p>
       <p>Wind:</p>
@@ -91,7 +92,7 @@
       <p>Wind:</p>
       <p>Humidity:</p>
     </div>
-
+  -->
     
 
   </section>
@@ -101,6 +102,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"
     integrity="sha512-hcV6DX35BKgiTiWYrJgPbu3FxS6CsCjKgmrsPRpUPkXWbvPiKxvSVSdhWX0yXcPctOI2FJ4WP6N1zH+17B/sAA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./main.js"></script>
 
 </body>
 
