@@ -20,7 +20,7 @@ The assignment is complete when all aspects of the UPENN Module # Acceptance Cri
 ## Assets
 Below is an image of the final project:
 
-![Image](./assets/weatherPhoto.png)
+![Image](./assets/Final%20Main%20Image.png)
 
 
 ## Deployment
