@@ -4,6 +4,8 @@ var correctTime = document.getElementById('timeDate');
 var historyList = [];
 var finalSearch = document.getElementById('pastSearch');
 
+// Code to add the prior cities searched. 
+
 function loadInput() {
     getAPI(inputField.value);
     historyList.push(inputField.value);
@@ -27,7 +29,7 @@ function init(){
 let Day = dayjs();
 correctTime.textContent = Day.format('MMM DD, YYYY');
 
-// main function that pulls API 
+// main function "getAPI" that pulls API 
 
 function getAPI(city) {
     var requestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=938fb3720289098948304613a4e3a426&units=imperial';
