@@ -127,7 +127,7 @@ function renderCities() {
         let cityButton = document.createElement('button');
 
         cityButton.style.background = 'grey';
-        cityButton.style.borderRadius = '10px';
+        cityButton.style.borderRadius = '25px';
 
         cityButton.dataset.city = city;
         cityButton.value = city;

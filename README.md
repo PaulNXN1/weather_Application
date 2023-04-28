@@ -11,7 +11,7 @@ The project was completed by each student. This was completed by Paul Nixon.
 
 ## User Story
 
-Pre-written code was not provided to the student. The main goal was to implement and practice third party APIs. There was a continued focus on JavaScript.  The user will have the ability to type any city, click search, and receive the weather log for the current day, plus a 5-day weather forecast with temperature, wind, and humidity readings.  
+Pre-written code was not provided to the student. The main goal was to implement and practice third party APIs. There was a continued focus on JavaScript.  The user will have the ability to type any city, click search, and receive the weather log for the current day, plus a 5-day weather forecast with temperature, wind, and humidity readings.  When the user would like to make a second search, the cities searched will save below the search button.  
 
 ## Acceptance Criteria
 
